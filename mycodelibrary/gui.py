@@ -1,8 +1,11 @@
 # mycodelibrary/gui.py
 
+import sys
+from pathlib import Path
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
 from tkinter import ttk
+sys.path.append(str(Path(__file__).parent.parent))
 from mycodelibrary.code_store import CodeStore
 
 class MyCodeLibraryApp:
