@@ -1,0 +1,8 @@
+{
+    "Python": [
+        {
+            "description": "Lists the languages",
+            "code": "def list_languages(self):\n        languages = self.store.list_languages()\n        \n        if not languages:\n            messagebox.showinfo(\"No Languages\", \"No languages found in the code store.\")\n            return\n        \n        self.output_text.delete(\"1.0\", tk.END)\n        self.output_text.insert(tk.END, \"Languages available in the code store:\\n\")\n        for language in languages:\n            self.output_text.insert(tk.END, f\"- {language}\\n\")"
+        }
+    ]
+}
